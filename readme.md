@@ -5,3 +5,11 @@ minikube start --extra-config "apiserver.cors-allowed-origins=["http://boot.dev"
 ```shell
 minikube dashboard --port=63840
 ```
+
+```shell
+minikube stop
+```
+
+```shell
+minikube delete
+```
