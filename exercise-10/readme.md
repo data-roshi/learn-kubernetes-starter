@@ -1,33 +1,26 @@
-## storage
+## namespaces 
 
 ```shell
-kubectl logs <pod_name>
-```
-
-up until the logs command
-
-```shell
-kubectl logs -f <pod_name>
-```
-
-follows the logs
-
-```shell
-kubectl apply -f crawler-deployment.yml -f crawler-configmap.yml 
+kubectl get ns
 ```
 
 ```shell
-kubectl logs <podname> --all-containers
+kubectl create ns <ns_name>
 ```
 
 ```shell
-kubectl get pvc
+kubectl delete deploy <name_deployment>
+```
+name in the metadata, not the filename
+
+```shell
+kubectl -n kube-system get pod
 ```
 
 ```shell
-kubectl get pv
+kubectl top pod
 ```
 
 ```shell
-kubectl delete pvc <pvc_name>
+kubectl get hpa
 ```
